@@ -3,12 +3,34 @@ import PropTypes from 'prop-types'
 
 import Link from '@tds/core-link'
 import Text from '@tds/core-text'
+import { media } from '@tds/core-responsive'
+import colours from '@tds/core-colours/colours'
 
 import joinClassNames from '../../../shared/utils/joinClassNames'
 import ColoredTextProvider from '../../../shared/components/ColoredTextProvider/ColoredTextProvider'
+import typography from '../../../shared/styles/Typography/typography'
 
-import styles from './Item.modules.scss'
 import linkStyles from '../../Link/Link.modules.scss'
+
+const styles = {
+  item: {
+    display: 'inline',
+    ...typography.sizes.small,
+    ...media.from('md')({
+      ...typography.sizes.medium,
+    }),
+  },
+  linkItem: {
+    color: colours.shuttleGrey,
+  },
+  lastItem: {
+    color: colours.telusPurple,
+    fontWeight: 700,
+  },
+  slash: {
+    margin: '0 0.5rem',
+  },
+}
 
 const Item = ({ href, reactRouterLinkComponent, children, current, ...rest }) => {
   const linkOptions = { ...rest }
@@ -19,13 +41,16 @@ const Item = ({ href, reactRouterLinkComponent, children, current, ...rest }) =>
     linkOptions.href = href
   }
   return (
-    <ColoredTextProvider tag="li" colorClassName={current ? styles.lastItem : styles.linkItem}>
+    <ColoredTextProvider
+      tag="li"
+      colorClassName={[styles.item, current ? styles.lastItem : styles.linkItem]}
+    >
       {current ? (
         <Text className={joinClassNames(linkStyles.base, linkStyles.inheritColor)}>{children}</Text>
       ) : (
         <span>
           <Link {...linkOptions}>{children}</Link>
-          <span className={styles.slash} aria-hidden="true">
+          <span css={[styles.item, styles.slash]} aria-hidden="true">
             /
           </span>
         </span>

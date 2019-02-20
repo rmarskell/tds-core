@@ -1,12 +1,89 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Breadcrumbs with children renders 1`] = `
+.c1 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #54595f;
+}
+
+.c3 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #4b286d;
+  font-weight: 700;
+}
+
+.c2 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  margin: 0 0.5rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
 <nav>
   <ol
-    class="list"
+    class="c0"
   >
     <li
-      class="linkItem"
+      class="c1"
     >
       <span>
         <a
@@ -17,14 +94,14 @@ exports[`Breadcrumbs with children renders 1`] = `
         </a>
         <span
           aria-hidden="true"
-          class="slash"
+          class="c2"
         >
           /
         </span>
       </span>
     </li>
     <li
-      class="linkItem"
+      class="c1"
     >
       <span>
         <a
@@ -35,14 +112,14 @@ exports[`Breadcrumbs with children renders 1`] = `
         </a>
         <span
           aria-hidden="true"
-          class="slash"
+          class="c2"
         >
           /
         </span>
       </span>
     </li>
     <li
-      class="lastItem"
+      class="c3"
     >
       <span
         class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__inheritColor___3YAyL"
@@ -55,12 +132,89 @@ exports[`Breadcrumbs with children renders 1`] = `
 `;
 
 exports[`Breadcrumbs with routes renders 1`] = `
+.c1 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #54595f;
+}
+
+.c3 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  color: #4b286d;
+  font-weight: 700;
+}
+
+.c2 {
+  display: inline;
+  font-size: 0.875rem;
+  -webkit-letter-spacing: -0.6px;
+  -moz-letter-spacing: -0.6px;
+  -ms-letter-spacing: -0.6px;
+  letter-spacing: -0.6px;
+  line-height: 1.42857;
+  margin: 0 0.5rem;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media (min-width:768px) {
+  .c1 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c3 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width:768px) {
+  .c2 {
+    font-size: 1rem;
+    -webkit-letter-spacing: -0.8px;
+    -moz-letter-spacing: -0.8px;
+    -ms-letter-spacing: -0.8px;
+    letter-spacing: -0.8px;
+    line-height: 1.5;
+  }
+}
+
 <nav>
   <ol
-    class="list"
+    class="c0"
   >
     <li
-      class="linkItem"
+      class="c1"
     >
       <span>
         <a
@@ -71,14 +225,14 @@ exports[`Breadcrumbs with routes renders 1`] = `
         </a>
         <span
           aria-hidden="true"
-          class="slash"
+          class="c2"
         >
           /
         </span>
       </span>
     </li>
     <li
-      class="linkItem"
+      class="c1"
     >
       <span>
         <a
@@ -89,14 +243,14 @@ exports[`Breadcrumbs with routes renders 1`] = `
         </a>
         <span
           aria-hidden="true"
-          class="slash"
+          class="c2"
         >
           /
         </span>
       </span>
     </li>
     <li
-      class="lastItem"
+      class="c3"
     >
       <span
         class="TDS_Typography-modules__base___gCTVZ TDS_Typography-modules__wordBreak___3dmWU TDS_Typography-modules__baseFont___2g1ZX TDS_Typography-modules__inheritColor___3YAyL"

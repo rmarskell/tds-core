@@ -9,7 +9,12 @@ import safeRest from '../../shared/utils/safeRest'
 
 import Item from './Item/Item'
 
-import styles from './Breadcrumbs.modules.scss'
+const styles = {
+  list: {
+    display: 'flex',
+    flexWrap: 'wrap',
+  },
+}
 
 const omitProps = ({
   current,
@@ -105,7 +110,7 @@ const Breadcrumbs = ({
 
   return (
     <nav {...safeRest(rest)}>
-      <ol className={styles.list}>
+      <ol css={styles.list}>
         {items.map(({ href, current, breadcrumbName, ...itemRest }) => (
           <Item
             {...itemRest}
